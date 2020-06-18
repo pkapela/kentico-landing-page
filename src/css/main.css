@@ -1,0 +1,190 @@
+/* Imports */
+/* _global-colors.scss */
+/* END OF _global-colors.scss */
+/* _fonts.scss */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/* END OF _fonts.scss */
+/* _fade-animations.scss */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  /*-webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;*/ }
+
+/* END OF _fade-animations.scss */
+/* END OF Imports */
+body {
+  font: 20px 'Open Sans', Helvetica Neue, Arial;
+  color: #222;
+  line-height: 1.7em; }
+
+label {
+  display: none; }
+
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+  outline: none;
+  color: #FFF; }
+
+::-moz-selection {
+  background: #B3D4FC;
+  text-shadow: none; }
+
+::selection {
+  background: #B3D4FC;
+  text-shadow: none; }
+
+button.info-button {
+  margin: auto;
+  display: block;
+  background-color: #005DAA;
+  border-color: #005DAA;
+  border-radius: 25px; }
+
+button.submit-button {
+  background-color: #005DAA;
+  border-color: #005DAA;
+  width: 250px;
+  font-size: 20px; }
+
+button.btn {
+  background-color: #005DAA;
+  border-color: #005DAA; }
+
+div.error-out {
+  color: #e60000; }
+
+div.f-box {
+  height: 510px; }
+  div.f-box h3 {
+    color: #005DAA; }
+
+#gc-header {
+  margin-top: 30px; }
+  #gc-header img:last-child {
+    width: 47px;
+    height: 80px; }
+
+#gc-feature {
+  margin-top: 15px; }
+  #gc-feature div.image {
+    position: relative;
+    width: 100%; }
+    #gc-feature div.image h2 {
+      position: absolute;
+      top: 80%;
+      left: 0;
+      width: 100%;
+      color: #005DAA;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-weight: bold;
+      padding-left: 7%; }
+
+#gc-body {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  #gc-body h3 {
+    margin-top: 40px;
+    text-align: center;
+    color: #005DAA; }
+  #gc-body p {
+    margin-top: 30px; }
+
+#gc-form h3 {
+  color: #005DAA; }
+
+#gc-feature-box {
+  margin-bottom: 30px; }
+
+#gc-footer {
+  margin-top: 45px; }
+  #gc-footer footer {
+    position: relative;
+    padding: 20px 15px 15px;
+    background: #005DAA; }
+  #gc-footer footer p {
+    color: #FFF;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5em;
+    max-height: 171px;
+    margin-left: 12%;
+    overflow: hidden; }
+  #gc-footer footer a:first-child img {
+    float: left;
+    margin-left: 2%;
+    margin-top: 8px; }
+  #gc-footer footer a:last-child img {
+    position: absolute;
+    top: 154px;
+    right: 80px; }
+
+/* Media Queries */
+@media only screen and (max-width: 575px) {
+  #gc-feature div.image h2 {
+    font-size: 1.7em;
+    top: 70%; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  #gc-feature div.image h2 {
+    font-size: 2.7em; } }
+
+@media only screen and (max-width: 991px) {
+  #gc-header img:last-child {
+    display: none; }
+  #gc-feature div.image h2 {
+    top: 75%; } }
+
+@media only screen and (max-width: 767px) {
+  #gc-feature div.image h2 {
+    font-size: 2em;
+    position: relative;
+    background-color: #005DAA;
+    color: #FFF;
+    text-align: center;
+    display: block; }
+  #gc-footer footer {
+    text-align: center; }
+  #gc-footer footer p {
+    margin: inherit;
+    display: block;
+    width: 100%; }
+  #gc-footer footer a:first-child img {
+    margin-bottom: 15px;
+    width: 51px;
+    height: auto;
+    float: none; }
+  #gc-footer footer a:last-child img {
+    display: none; } }
+
+/* END OF Media Queries */
